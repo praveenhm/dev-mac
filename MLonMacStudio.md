@@ -187,4 +187,14 @@ RealESRGAN, SwinIR or BSRGAN or GFPGAN (faces)
 
 
 Stable Diffusion: required libraries
+
 pip install accelerate
+
+
+-----------Aug 2023------------
+brew install graphviz
+
+brew install git-lfs
+git lfs install 
+
+brew bundle dump
