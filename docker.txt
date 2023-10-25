@@ -1,4 +1,4 @@
-Docker Installation on Rocky Linux Oct 2023
+Docker Installation on Rocky Linux 9 Oct 2023
 
 Docker:
 
@@ -47,8 +47,8 @@ Change default docker home from /var/lib/docker:
 	or create the directory
 	sudo mkdir -p /etc/systemd/system/docker.service.d/ and create override.conf
 
-
 	Add this
+
 	[Service]
 	ExecStart=
 	ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock --data-root /home/andes/docker
@@ -72,6 +72,9 @@ create docker directory
 	sudo chown -R root:root /home/andes/docker
 	sudo chmod -R 0700 /home/andes/docker
 
+
+Run local docker:
+docker run --rm --name pyContainer -v ./:/work --network=host -it python:3.11.6-slim-bullseye /bin/bash
 
 
 
