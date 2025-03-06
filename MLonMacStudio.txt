@@ -1,5 +1,5 @@
 
-[Mac tips and tricks:](https://saurabhs.org/macos-tips)
+Mac tips and tricks: https://saurabhs.org/macos-tips
 
 
 Font and theme same across Sublime, VS Code :
@@ -51,44 +51,10 @@ history | cut -c 8-
     brew install spaceship
 
 
-####### This is for testing new python just released …
-Use MiniConda, Anaconda is bloated, even for regular 
-#### https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/macos.html
-### Remove previous conda environment
-  conda remove -n ENVNAME --all
-#### use Conda-forge channel to get faster update than Conda, it is community driven
-conda create -c conda-forge -n py311 python=3.11
-### Use mamba which is faster in place for Conda replacement C++, did't work
-### mamba create -n py311 python=3.11 
-Conda activate py311
-Pip install ipython
-############
+####### Python use UV, conda is dead
+uv site: https://docs.astral.sh/uv/getting-started/installation/
 
-
-### Install arm64 Anaconda, python 3.9 , --Jun 15, 2022
-### Stop using Anaconda bloated, instead miniconda 
-pip install jupyter_contrib_nbextensions
-conda deactivate 
-conda env list
-conda create --clone base  --name tf
-conda activate tf
-
-python packages install on base:
-
-pip install pandas-profiling
-pip install ruamel.yaml
-pip install markupsafe==2.0.1
-pip install yellowbrick
-pip install altair
-
-
-#install tensorflow 2.9.2
-conda install -c apple tensorflow-deps
- #apple/osx-arm64::tensorflow-deps-2.8.0-0
-python -m pip install tensorflow-macos
- #tensorflow-macos-2.9.2
-python -m pip install tensorflow-metal 
-  #tensorflow-metal-0.5.0
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 pip install --upgrade pip
 pip install numpy --upgrade
@@ -96,7 +62,7 @@ pip install numpy --upgrade
 #sublime
 brew install --cask sublime-text dbeaver 
 
-#increase font, avoid new window
+#increase font, avoid new window on sublime
 {
     "font_size": 14,
     "ignored_packages":
@@ -110,20 +76,9 @@ brew install --cask sublime-text dbeaver
     "light_theme": "Default Dark.sublime-theme",
 }
 
-Install PyCharm:
-    Change in appearence and editor->fonts :
-     Install one Dark theme
-     font: Iosevka size :14 & line height 1.0
-      brew tap homebrew/cask-fonts 
-      brew install --cask font-iosevka
-
 
 # git
 brew install git curl wget
-
-#Install pytorch-nightly:
-conda create --clone base  --n pyt
- #conda remove env -n pyt
 
 Brew install:
    brew install texlive coreutils
