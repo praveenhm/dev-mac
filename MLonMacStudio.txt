@@ -1,5 +1,5 @@
 
-(Mac tips and tricks:)[https://saurabhs.org/macos-tips]
+[Mac tips and tricks:](https://saurabhs.org/macos-tips)
 
 
 Font and theme same across Sublime, VS Code :
