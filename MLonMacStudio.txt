@@ -2,6 +2,10 @@
 Mac tips and tricks: https://saurabhs.org/macos-tips
 
 
+Add this to host file to blocks all ads at network level:
+https://someonewhocares.org/hosts/ipv6zero/
+
+
 Font and theme same across Sublime, VS Code :
 Font: Iosevka
 Theme: Mariana Pro Theme
